@@ -10,7 +10,7 @@
   "scripts": {
     "start:dev": "yarn watch:server & yarn watch:client",
     "watch:server": "nodemon --watch . ./server/server.js localhost 8080 --exec babel-node",
-    "watch:client": "webpack-dev-server --host localhost --port 3000"
+    "watch:client": "webpack-dev-server --hot"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
